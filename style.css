@@ -435,9 +435,10 @@ th{
         background-color: #f9f9f9;
         
     }
-
+    
     #list{
         margin:2%;
+        display:none;
     }
     #list li a{
         justify-content: center;

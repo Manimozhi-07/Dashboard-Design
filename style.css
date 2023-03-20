@@ -397,6 +397,9 @@ th{
     #list li{
         padding:5px;
     }
+    #list a:hover{
+        opacity: 0.8;
+    }
     .list_item{
         display:inline-block;
         width:100px;

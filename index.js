@@ -7,3 +7,11 @@ function myFunction() {
       x.style.display = "block";
     }
 }
+
+window.onresize=window.onload=()=>{
+    var width=this.innerWidth;
+    var y= document.getElementById("list");
+    if(width>900){
+        y.style.display="block";
+    }
+}

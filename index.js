@@ -1,4 +1,5 @@
 //Collapse Expand
+const btn=document.getElementById("collpase-button");
 function myFunction() {
     var x = document.getElementById("list");
     if (x.style.display === "block") {
@@ -7,6 +8,7 @@ function myFunction() {
       x.style.display = "block";
     }
 }
+btn.addEventListener('click',myFunction);
 
 //Resize
 window.onresize=window.onload=()=>{

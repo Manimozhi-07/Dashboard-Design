@@ -1,23 +1,23 @@
 //Collapse Expand
-const btn=document.getElementById("collpase-button");
+var btn=document.getElementById("collpase-button");
+var list = document.getElementById("list");
 function myFunction() {
-    var x = document.getElementById("list");
-    if (x.style.display === "block") {
-      x.style.display = "none";
+    
+    if (list.style.display === "block") {
+      list.style.display = "none";
     } else {
-      x.style.display = "block";
+      list.style.display = "block";
     }
 }
 btn.addEventListener('click',myFunction);
 
-//Resize
+//list display
 window.onresize=window.onload=()=>{
     var width=this.innerWidth;
-    var y= document.getElementById("list");
     if(width>900){
-        y.style.display="block";
+        list.style.display="block";
     }
     else{
-        y.style.display="none";
+        list.style.display="none";
     }
 }

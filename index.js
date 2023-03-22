@@ -23,7 +23,7 @@ window.onresize=window.onload=()=>{
 }
 
 //Tabs
-const li=document.querySelectorAll("#list a");  //list array
+var li=document.querySelectorAll("#list a");  //list array
 
 const main_content=document.querySelectorAll("#content .main");  //main array
 
@@ -82,3 +82,11 @@ clsbtn.forEach((cb,i)=>{
 // }
 // }
 // tooltip();
+const list_item=document.querySelectorAll(".list_item");
+li.forEach((l,i)=>{
+  l.addEventListener('click',()=>{
+    let text=list_item[i].textContent;
+    document.getElementById("item").innerText=text;
+    
+  });
+});

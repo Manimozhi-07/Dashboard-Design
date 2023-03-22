@@ -1,6 +1,6 @@
 //Collapse Expand
-var btn=document.getElementById("collpase-button");
-var list = document.getElementById("list");
+const btn=document.getElementById("collpase-button");
+const list = document.getElementById("list");
 function myFunction() {
     
     if (list.style.display === "block") {
@@ -48,10 +48,37 @@ li.forEach((l,i)=>{
 
 //modals
 const hoverbtn=document.querySelectorAll('.hoverbtn');
-console.log(hoverbtn);
-function displayModal(){
-  alert("displayed");
-}
-hoverbtn.forEach((hb)=>{
-  hb.addEventListener('click',displayModal);
+const modal=document.querySelectorAll('.modals');
+const clsbtn=document.querySelectorAll('.clsbtn')
+
+hoverbtn.forEach((hb,i)=>{
+  hb.addEventListener('click',()=>{
+    modal[i].showModal();
+  });
 });
+
+clsbtn.forEach((cb,i)=>{
+  cb.addEventListener('click',()=>{
+    modal[i].close();
+  });
+});
+
+//tooltip
+// var liIcons=document.querySelectorAll("#list i");
+// console.log(liIcons);
+// var liItems=document.querySelectorAll(".list_item");
+// console.log(liItems);
+// var w=this.innerWidth;
+// function tooltip(){
+// if(w>901 && w<990){
+//   liIcons.forEach((liIcon,i)=>{
+//     liIcon.addEventListener('mouseover',()=>{
+//       liItems[i].style.display="block";
+//     });
+//     liIcon.addEventListener('click',()=>{
+//       liItems[i].style.display="none";
+//     });
+//   });
+// }
+// }
+// tooltip();

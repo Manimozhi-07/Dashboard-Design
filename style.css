@@ -7,8 +7,6 @@
 body{
     width:100%;
     background-color: #f9f9f9; 
-    
-    /* background-color: #5D60EF;  */
     display: flex;
 }
 #sidebar{
@@ -29,7 +27,6 @@ body{
     display:none;
     margin-right: 10px;
 }
-
 #logo{
     background-color: #5D60EF;;
     padding: 7px;
@@ -89,6 +86,7 @@ body{
     display:flex;
     align-items: center;
     /* margin:10px; */
+    
 }
 
    
@@ -381,13 +379,13 @@ body{
     padding: 5px;
    
 }
-table{
+#c6 table{
     width:100%;
 }
-tr{
+#c6 tr{
     border-bottom: 1px solid rgb(207, 207, 207);
   }
-th{
+#c6 th{
     font-size: 10px;
     color: gray;
 }
@@ -415,11 +413,41 @@ th{
  width:100%;
  height:150px;
 }
-/* #main3 h1{
-    background-color: #5D60EF;
+#main2{
     text-align: center;
-} */
+}
 
+#main2 .first{
+  color:gold;
+  font-size: 40px;
+}
+#main2 .second{
+    color:silver;
+    font-size:30px;
+}
+#main2 .third{
+    color:rgb(194, 136, 28);
+    font-size:20px;
+}
+
+#main2 #leadertable{
+    width:70%;
+    margin: auto;
+    margin-top: 100px;
+    padding: 20px;
+    
+}
+#main2 #leadertable tr, #main2 #leadertable th{
+    border:1px solid gray;
+    padding: 30px;
+    height:70px;
+}
+#main2 #leadertable th{
+    border-bottom:1px solid gray;
+}
+#leadertable tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
 @media screen and (min-width:991px) and (max-width:1267px) {
     #sidebar{
         width:20%;
@@ -433,6 +461,7 @@ th{
 @media screen and (min-width:901px) and (max-width:990px){
     #sidebar{
         width:7%;
+        z-index: 1;
     }
     #brand #brand-name{
         display:none;
@@ -441,16 +470,18 @@ th{
         padding:5px;
         
     }
-   
+    #list a{
+        position: relative;
+    }
     .list_item{
         display:inline-block;
         width:100px;
         text-align: center;
-        position:fixed;
+        position:absolute;
+        visibility: hidden; 
         
-        visibility: hidden;
         background-color:gray;
-        left: 60px;
+        left: 55px;
         font-size: smaller;
         border-radius: 5px;
         padding: 3px;
@@ -467,20 +498,29 @@ th{
     }
     #list a:hover .list_item{
         visibility: visible;
-        
+       
         
     }
     #list a.active .list_item{
         visibility: hidden;
-    
+       
     }
-    
+    .list_item::before{
+        content:" ";
+        position:absolute;
+        width:10px;
+        height:10px;
+        background-color:gray;
+        transform: rotate(45deg);
+        top:40%;
+        left:-5px;
+    }
     #content{
         width:93%;
         left:7%;
         
     }
-    
+   
     
 }
 @media screen and (max-width:900px){
@@ -491,6 +531,7 @@ th{
         background-color: #f9f9f9;
         width: 100%;
         position:static;
+        
     }
     
     #brand button{
@@ -516,6 +557,9 @@ th{
     
 }
 @media screen and (max-width:845px){
+    #navbar h4{
+        font-size: 18px;
+    } 
     #c1{
         width:75%;
     }
@@ -525,9 +569,7 @@ th{
     }
 } 
 @media screen and (max-width:730px){
-     #navbar h4{
-        font-size: 15px;
-    } 
+    
     #navbar #searchbar{
         width:250px ;
     }
@@ -543,12 +585,9 @@ th{
     }
    
 }
-@media screen and (max-width:650px){
+@media screen and (max-width:675px){
     #navbar{
         flex-direction: column;
-    }
-    #navbar #item h4{
-        font-size: 20px;
     }
     
     

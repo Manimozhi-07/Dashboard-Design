@@ -63,30 +63,14 @@ clsbtn.forEach((cb,i)=>{
   });
 });
 
-//tooltip
-// var liIcons=document.querySelectorAll("#list i");
-// console.log(liIcons);
-// var liItems=document.querySelectorAll(".list_item");
-// console.log(liItems);
-// var w=this.innerWidth;
-// function tooltip(){
-// if(w>901 && w<990){
-//   liIcons.forEach((liIcon,i)=>{
-//     liIcon.addEventListener('mouseover',()=>{
-//       liItems[i].style.display="block";
-//     });
-//     liIcon.addEventListener('click',()=>{
-//       liItems[i].style.display="none";
-//     });
-//   });
-// }
-// }
-// tooltip();
+//Dynamic items
 const list_item=document.querySelectorAll(".list_item");
+const item=document.querySelector("#item h4");
+
 li.forEach((l,i)=>{
   l.addEventListener('click',()=>{
     let text=list_item[i].textContent;
-    document.getElementById("item").innerText=text;
-    
+    item.innerText=text;
+   
   });
 });

@@ -29,49 +29,50 @@
           <ul>
             <li>
                 <a href="#" class="active" >
-                  <i class="bi bi-pie-chart-fill"  title="Dashboard"></i>&nbsp;
+                  <i class="bi bi-pie-chart-fill"></i>&nbsp;
                   <span class="list_item">Dashboard</span>
                 </a>
             </li>
             <li>
               <a href="#">
-                <i class="bi bi-bar-chart"   title="Leaderboard"></i> &nbsp;
+                <i class="bi bi-bar-chart"></i> &nbsp;
                 <span class="list_item" >Leaderboard</span>
+
               </a>
             </li>
             <li>
               <a href="#">
-                <i class="bi bi-cart"   title="Order"></i> &nbsp;
+                <i class="bi bi-cart"></i> &nbsp;
                 <span class="list_item">Order</span>
               </a>
             </li>
             <li>
               <a href="#">
-                <i class="bi bi-bag"    title="Products"></i> &nbsp;
+                <i class="bi bi-bag"></i> &nbsp;
                 <span class="list_item">Products</span>
               </a>
             </li>
             <li>
               <a href="#">
-                <i class="bi bi-graph-up"   title="Sales Report"></i>&nbsp;
+                <i class="bi bi-graph-up"></i>&nbsp;
                 <span class="list_item">Sales Report</span>
               </a>
             </li>
             <li>
               <a href="#">
-                <i class="bi bi-chat-left-dots"   title="Messages"></i> &nbsp;
+                <i class="bi bi-chat-left-dots"></i> &nbsp;
                 <span class="list_item">Messages</span>
               </a>
             </li>
             <li>
               <a href="#" >
-                <i class="bi bi-gear"   title="Settings"></i> &nbsp;
+                <i class="bi bi-gear"></i> &nbsp;
                 <span class="list_item">Settings</span>
               </a>
             </li>
             <li>
               <a href="#">
-                <i class="bi bi-box-arrow-right"   title="Signout"></i> &nbsp;
+                <i class="bi bi-box-arrow-right"></i> &nbsp;
                 <span class="list_item">Signout</span>
               </a>
             </li>
@@ -416,63 +417,36 @@
 
     <!--Main 2 starts-->
     <div class="main" id="main2">
-      <h4>Leaderboard</h4>
-      <table>
-        <tr>
-          <th class="col1">S.No</th>
-          <th class="col2">Name</th>
-          <th class="col3">Popularity</th>
-          <th class="col4">Sales</th>
-        </tr>
-        <tr class="t-r">
-          <td class="col1">01</td>
-          <td class="col2">Home Decor Range</td>
-          <td class="col3">
-            <div class="progress" style="background-color: rgb(149, 241, 241);">
-              <div class="progress-bar" style=" background-color: rgb(35, 141, 240);width:45%;"></div>
-            </div>
-          </td>
-          <td class="col4">
-            <span class="badge" style="color:rgb(35, 141, 240);background-color: rgb(149, 241, 241);border-color:rgb(35, 141, 240) ;">45%</span>
-          </td>
-        </tr>
-        <tr class="t-r">
-          <td class="col1">02</td>
-          <td class="col2">Disney Princess Pink Bag 18</td>
-          <td class="col3">
-            <div class="progress" style="background-color:rgba(149, 241, 190, 0.973)">
-              <div class="progress-bar" style="  background-color: rgb(42, 95, 21);width:29%;"></div>
-            </div>
-          </td>
-          <td class="col4">
-            <span class="badge" style="background-color: rgba(149, 241, 190, 0.973); color:  rgb(42, 95, 21); border-color:  rgb(42, 95, 21);">29%</span>
-          </td>
-        </tr>
-        <tr class="t-r">
-          <td class="col1">03</td>
-          <td class="col2">Bathroom Essentials</td>
-          <td class="col3">
-            <div class="progress" style=" background-color: rgb(149, 166, 241);">
-              <div class="progress-bar" style=" background-color: rgb(74, 79, 146);width:18%;"></div>
-            </div>
-          </td>
-          <td class="col4">
-            <span class="badge" style=" background-color:  rgb(149, 166, 241); color:rgb(74, 79, 146) ; border-color:rgb(74, 79, 146) ;">18%</span>
-          </td>
-        </tr>
-        <tr class="t-r" style="border:none;">
-          <td class="col1">04</td>
-          <td class="col2">Apple Smartwatches</td>
-          <td class="col3">
-            <div class="progress" style="background-color: rgb(241, 232, 149);">
-              <div class="progress-bar" style=" background-color: rgb(194, 141, 71);width:25%;"></div>
-            </div>
-          </td>
-          <td class="col4">
-            <span class="badge" style=" background-color: rgb(241, 232, 149) ; color:rgb(194, 141, 71) ; border-color:rgb(194, 141, 71) ;">25%</span>
-          </td>
-        </tr>
-      </table>
+      
+      <h2><i class="bi bi-trophy-fill first" ></i> &nbsp;<i class="bi bi-trophy-fill second"></i>&nbsp; <i class="bi bi-trophy-fill third"></i> <br>Leaderboard</h2>
+      <div id="leaderboard">
+        <table id="leadertable">
+          <tr>
+            <th>Rank</th>
+            <th>Name</th>
+            <th>Points</th>
+            <th>Reward</th>
+          </tr>
+          <tr>
+            <td style="color:gold;font-weight: bolder;">1</td>
+            <td>aaaaa</td>
+            <td>500</td>
+            <td><i class="bi bi-trophy-fill first"></i></td>
+          </tr>
+          <tr>
+            <td style="color:silver;font-weight: bolder;">2</td>
+            <td>bbbbb</td>
+            <td>400</td>
+            <td><i class="bi bi-trophy-fill second"></i></td>
+          </tr>
+          <tr>
+            <td style="color:rgb(194, 136, 28);font-weight: bolder;">3</td>
+            <td>ccccc</td>
+            <td>300</td>
+            <td><i class="bi bi-trophy-fill third"></i></td>
+          </tr>
+        </table>
+      </div>
     </div>
     <!--Main 2 Ends-->
 

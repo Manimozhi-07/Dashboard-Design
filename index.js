@@ -74,3 +74,19 @@ li.forEach((l,i)=>{
    
   });
 });
+
+//profile dropdown
+const drop=document.getElementById("drop");
+const down=document.getElementById("down");
+drop.addEventListener('click',myDrop);
+function myDrop(){
+  
+  if(down.style.display==="block"){
+      down.style.display="none";
+      drop.style.transform="rotate(360deg)";
+    }
+    else{
+      down.style.display="block";
+      drop.style.transform="rotate(180deg)";
+    }
+}

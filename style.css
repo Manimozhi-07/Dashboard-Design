@@ -78,7 +78,8 @@ body{
     align-items: center;
     justify-content: space-between;
     background-color: white;
-    
+    position:relative;
+    z-index:1;
 }
 
 #navbar #item{
@@ -182,6 +183,35 @@ body{
 #profile #drop{
     margin: 5px;
     font-size: small;
+}
+#profile #down{
+    position:absolute;
+    top:80px;
+    background-color:grey;
+    padding:15px;
+    opacity:0.9;
+    display: none;
+}
+#down span{
+    display: block;
+    line-height: 50px;
+    font-weight: bolder;
+    padding: 5px;
+}
+#down span:hover{
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#down::before{
+    content:" ";
+    position:absolute;
+    width:10px;
+    height:10px;
+    background-color:gray;
+    transform: rotate(45deg);
+    left:60%;
+    top:-5px;
 }
 .main{
     display:none;
@@ -486,8 +516,7 @@ body{
         border-radius: 5px;
         padding: 3px;
         opacity:0.9;
-        
-    }
+     }
    
     #list a:hover{
         background-color:gray;
@@ -567,6 +596,7 @@ body{
     #c4,#c5{
         width:35%;
     }
+    
 } 
 @media screen and (max-width:730px){
     
@@ -583,13 +613,15 @@ body{
         display:inline-block;
         width:46%;
     }
-   
+    
 }
 @media screen and (max-width:675px){
     #navbar{
         flex-direction: column;
     }
-    
+    #profile #down{
+        top:210px;
+    } 
     
 }
 

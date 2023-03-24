@@ -463,20 +463,22 @@ body{
 #main2 #leadertable{
     width:70%;
     margin: auto;
-    margin-top: 100px;
-    padding: 20px;
+    margin-top: 90px;
+    padding: 10px;
+    background-color: white;
     
 }
 #main2 #leadertable tr, #main2 #leadertable th{
-    border:1px solid gray;
     padding: 30px;
     height:70px;
 }
 #main2 #leadertable th{
-    border-bottom:1px solid gray;
+    /* border-bottom:1px solid gray; */
+    background-color: rgb(153, 153, 153);
 }
 #leadertable tr:nth-child(even) {
-    background-color: #f2f2f2;
+    background-color: #ececec;
+   
 }
 @media screen and (min-width:991px) and (max-width:1267px) {
     #sidebar{

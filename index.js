@@ -88,5 +88,6 @@ function myDrop(){
     else{
       down.style.display="block";
       drop.style.transform="rotate(180deg)";
+     
     }
 }

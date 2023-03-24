@@ -482,6 +482,32 @@ body{
     background-color: #ececec;
    
 }
+#main4{
+    text-align: center;
+}
+#main4 #product-table{
+    width:80%;
+    margin: auto;
+    margin-top: 30px;
+    padding: 30px;
+    border-color: white;
+}
+#main4 #product-table tr, #main4 #product-table th{
+    padding: 20px;
+    height:50px;
+}
+#main4 #product-table .col1,.col2{
+    font-size: 15px;
+}
+#main4 #product-table th{
+    /* border-bottom:1px solid gray; */
+    background-color: rgb(153, 153, 153);
+}
+#product-table tr:nth-child(odd) {
+    background-color: #ececec;
+   
+}
+
 @media screen and (min-width:991px) and (max-width:1267px) {
     #sidebar{
         width:20%;

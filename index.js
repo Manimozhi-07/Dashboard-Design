@@ -78,6 +78,7 @@ li.forEach((l,i)=>{
 //profile dropdown
 const drop=document.getElementById("drop");
 const down=document.getElementById("down");
+
 drop.addEventListener('click',myDrop);
 function myDrop(){
   
@@ -92,6 +93,7 @@ function myDrop(){
     }
 }
 document.addEventListener('click',function(event) {
+  console.log(event.target);
   if (event.target === down) {
       down.style.display = "none";
       drop.style.transform="rotate(360deg)";

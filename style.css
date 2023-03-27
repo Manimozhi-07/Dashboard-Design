@@ -174,7 +174,7 @@ body{
     top:80px;
     background-color:grey;
     padding:15px;
-    opacity:0.9;
+
     display: none;
 }
 #down span{
@@ -236,7 +236,8 @@ body{
 } 
 .c:hover{
     /* box-shadow: 2px 2px 20px gray; */
-    filter: grayscale(80%);
+    filter: grayscale(100%);
+    
 }
 .hoverbtn{
     display:none;
@@ -262,6 +263,10 @@ body{
 .modals h4{
     color:rgb(3, 3, 27);
     font-weight: bolder;
+}
+.modals::backdrop{
+    background-color: gray;
+    opacity:0.9;
 }
 .clsbtn{
     border:none;

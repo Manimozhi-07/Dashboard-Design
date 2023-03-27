@@ -85,6 +85,7 @@ body{
     display:flex;
     align-items: center;
     /* margin:10px; */
+    width:25%;
 }
 #navbar #item h4{
     font-weight: bolder;
@@ -93,23 +94,25 @@ body{
     background-color: #f9f9f9;
     padding: 10px;
     /* margin: 13px; */
-    width:300px;
+    /* width:300px; */
+    width:35%;
     height:45px;
     border-radius: 10px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
 }
 #searchbar i{
     color:#5D60EF;
     font-weight: bolder;
-    width:50px;
+    
 }
 #searchbar input{
     background-color: #f9f9f9;
     outline: none;
     border: none;
     width:250px;
+    
 }
 #navbar #language{
     display:flex;
@@ -117,6 +120,7 @@ body{
     justify-content: center; 
     padding:10px;
     /* margin: 10px; */
+    width:15%;
 }
 #language img{
     height:25px;
@@ -135,6 +139,7 @@ body{
     /* margin:10px; */
     justify-content: center;
     align-items: center;
+    width:25%;
 }
 #notification{
     background-color:rgba(255, 207, 162, 0.568);
@@ -171,7 +176,8 @@ body{
 }
 #profile #down{
     position:absolute;
-    top:80px;
+    top:70px;
+   
     background-color:grey;
     padding:15px;
 
@@ -196,7 +202,7 @@ body{
     height:10px;
     background-color:gray;
     transform: rotate(45deg);
-    left:80%;
+    left:85%;
     top:-5px;
 }
 .main{
@@ -554,8 +560,6 @@ body{
         left:7%;
         
     }
-   
-    
 }
 @media screen and (max-width:900px){
     body{
@@ -623,12 +627,18 @@ body{
 @media screen and (max-width:675px){
     #navbar{
         flex-direction: column;
-        
+        margin: auto;
     }
     #profile #down{
         top:210px;
     } 
+    .navdiv{
+        width:100%;
+    }
     
+    #navbar #searchbar{
+        width:80%;
+    }
     
 }
 
@@ -640,7 +650,7 @@ body{
     .imgsm,#map{
         height:150px;
     }
-    
+   
 }
 
 

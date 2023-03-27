@@ -41,7 +41,6 @@ body{
 }
 #list{
     margin: 12%;
-    
 }
 #list ul{
     padding:0;
@@ -65,7 +64,6 @@ body{
     border-radius: 10px;
     color:#f9f9f9;
 }
-
 #content{
     width:85%;
     height:100%;
@@ -82,20 +80,15 @@ body{
     position:relative;
     z-index:1;
 }
-
 #navbar #item{
     padding: 10px;
     display:flex;
     align-items: center;
     /* margin:10px; */
-    
 }
-
-   
 #navbar #item h4{
     font-weight: bolder;
 }
-
 #navbar #searchbar{
     background-color: #f9f9f9;
     padding: 10px;
@@ -130,14 +123,6 @@ body{
     width:25px;
     border-radius:100%;
 }
-/* #language span{
-    font-weight: bolder;
-    font-size: 12px;
-} */
-/* #language i{
-    font-size: small;
-    font-weight: bolder;
-} */
 #language select{
     border: none;
     outline:none;
@@ -156,7 +141,6 @@ body{
     border-radius: 5px;
     padding:5px;
 }
-
 #notification #bell{
     color:orange;
     
@@ -225,7 +209,6 @@ body{
 }
 #main1 .r{
     display:flex;
-  
     width:100%;
     justify-content: space-around;
 }
@@ -236,8 +219,6 @@ body{
     margin:10px;
     position: relative;
 }
-
-
 #c1{
     width:60%;
 }
@@ -317,9 +298,6 @@ body{
     border-radius: 10px;
     padding:10px;
 }
-/* .b:hover{
-    box-shadow: 2px 2px 20px grey;
-} */
 .b i{
     font-size: small; 
     border-radius: 100%;
@@ -409,14 +387,13 @@ body{
     font-size:12px;
     font-weight:bold;
     padding: 5px;
-   
 }
 #c6 table{
     width:100%;
 }
 #c6 tr{
     border-bottom: 1px solid rgb(207, 207, 207);
-  }
+}
 #c6 th{
     font-size: 10px;
     color: gray;
@@ -430,12 +407,10 @@ body{
 .col2 , .col3{
     width:40%;
 }
-  
 .t-r .col3 .progress{
     width:90%; 
     height:7px;
 }
-  
 .t-r .col4 .badge{
     border:1px solid;
     font-size:small;
@@ -448,7 +423,6 @@ body{
 #main2{
     text-align: center;
 }
-
 #main2 .first{
   color:gold;
   font-size: 40px;
@@ -461,14 +435,12 @@ body{
     color:rgb(194, 136, 28);
     font-size:20px;
 }
-
 #main2 #leadertable{
     width:70%;
     margin: auto;
     margin-top: 90px;
     padding: 10px;
     background-color: white;
-    
 }
 #main2 #leadertable tr, #main2 #leadertable th{
     padding: 30px;
@@ -480,7 +452,6 @@ body{
 }
 #leadertable tr:nth-child(even) {
     background-color: #ececec;
-   
 }
 #main4{
     text-align: center;
@@ -496,7 +467,7 @@ body{
     padding: 20px;
     height:50px;
 }
-#main4 #product-table .col1,.col2{
+#main4 #product-table tr{
     font-size: 15px;
 }
 #main4 #product-table th{
@@ -505,7 +476,6 @@ body{
 }
 #product-table tr:nth-child(odd) {
     background-color: #ececec;
-   
 }
 
 @media screen and (min-width:991px) and (max-width:1267px) {
@@ -648,10 +618,12 @@ body{
 @media screen and (max-width:675px){
     #navbar{
         flex-direction: column;
+        
     }
     #profile #down{
         top:210px;
     } 
+    
     
 }
 

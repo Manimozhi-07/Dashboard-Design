@@ -91,3 +91,9 @@ function myDrop(){
      
     }
 }
+document.addEventListener('click',function(event) {
+  if (event.target === down) {
+      down.style.display = "none";
+      drop.style.transform="rotate(360deg)";
+  }
+});

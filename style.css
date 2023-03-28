@@ -80,7 +80,7 @@ body{
     position:relative;
     z-index:1;
 }
-#navbar #item{
+#item{
     padding: 10px;
     display:flex;
     align-items: center;
@@ -88,10 +88,10 @@ body{
     width:25%;
     
 }
-#navbar #item h4{
+#item h4{
     font-weight: bolder;
 }
-#navbar #searchbar{
+#searchbar{
     background-color: #f9f9f9;
     padding: 10px;
     /* margin: 13px; */
@@ -115,7 +115,7 @@ body{
     width:100%;
     
 }
-#navbar #language{
+#language{
     display:flex;
     align-items: center;
     justify-content: center; 
@@ -147,7 +147,7 @@ body{
     border-radius: 5px;
     padding:5px;
 }
-#notification #bell{
+#bell{
     color:orange;
     
 }
@@ -161,21 +161,21 @@ body{
     margin-right:5px; 
     line-height: 15px;
 }
-#profile-name #name{
+#name{
     font-size: 12px;
     font-weight: bolder;
     padding: 0%;
     margin: 0%;
 }
-#profile-name #domain{
+#domain{
     font-size: 10px;
     color: gray;
 }
-#profile #drop{
+#drop{
     margin: 5px;
     font-size: small;
 }
-#profile #down{
+#down{
     position:absolute;
     top:70px;
     border-radius: 10px;
@@ -209,7 +209,7 @@ body{
 .main{
     display:none;
 }
-.main.active{
+.active{
     width:100%;
     padding: 10px;
     display: block;

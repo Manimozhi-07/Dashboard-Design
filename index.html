@@ -1,458 +1,611 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard</title>
-    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <!--Sidebar Starts-->
-  <div id="sidebar">
-    <div id="brand">
-      <button id="collpase-button" type="button"><i class="bi bi-list"></i></button>&nbsp;
-      <div id="logo">
-        <i class="bi bi-amd"  title="Dabang"></i>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--Sidebar Starts-->
+    <div id="sidebar">
+      <div id="brand">
+        <button id="collpase-button" type="button">
+          <i class="bi bi-list"></i></button
+        >&nbsp;
+        <div id="logo">
+          <i class="bi bi-amd" title="Dabang"></i>
+        </div>
+        <div id="brand-name">
+          <h4>Dabang</h4>
+        </div>
       </div>
-      <div id="brand-name">
-        <h4>Dabang</h4>
-      </div>
-    </div>
-    <div id="list">
-      <ul>
-        <li>
-          <a href="#" class="active" >
+      <div id="list">
+        <ul>
+          <li>
+            <a href="#" class="active">
               <i class="bi bi-pie-chart-fill"></i>&nbsp;
               <span class="list_item">Dashboard</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class="bi bi-bar-chart"></i> &nbsp;
-            <span class="list_item" >Leaderboard</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class="bi bi-cart"></i> &nbsp;
-            <span class="list_item">Order</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class="bi bi-bag"></i> &nbsp;
-            <span class="list_item">Products</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class="bi bi-graph-up"></i>&nbsp;
-            <span class="list_item">Sales Report</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class="bi bi-chat-left-dots"></i> &nbsp;
-            <span class="list_item">Messages</span>
-          </a>
-        </li>
-        <li>
-          <a href="#" >
-            <i class="bi bi-gear"></i> &nbsp;
-            <span class="list_item">Settings</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class="bi bi-box-arrow-right"></i> &nbsp;
-            <span class="list_item">Signout</span>
-          </a>
-        </li>
-      </ul>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="bi bi-bar-chart"></i> &nbsp;
+              <span class="list_item">Leaderboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="bi bi-cart"></i> &nbsp;
+              <span class="list_item">Order</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="bi bi-bag"></i> &nbsp;
+              <span class="list_item">Products</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="bi bi-graph-up"></i>&nbsp;
+              <span class="list_item">Sales Report</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="bi bi-chat-left-dots"></i> &nbsp;
+              <span class="list_item">Messages</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="bi bi-gear"></i> &nbsp;
+              <span class="list_item">Settings</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="bi bi-box-arrow-right"></i> &nbsp;
+              <span class="list_item">Signout</span>
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
-  <!--Sidebar Ends-->
+    <!--Sidebar Ends-->
 
-  <!--Content Starts-->
-  <div id="content">
-    <!--Navbar Starts-->
-    <div id="navbar">
-      <!--name starts-->
-      <div id="item">
-        <h4>Dashboard</h4>        
-      </div>
-      <!--name ends-->
-
-      <!--searchbar starts-->
-      <div id="searchbar">
-        <label for="search"><i class="bi bi-search"></i></label>&nbsp;
-        <input type="text" name="search" placeholder="Search here...">
-      </div>
-      <!--searchbar ends-->
-
-      <!--language starts-->
-      <div id="language">
-        <img src="images/download.png" alt="">&nbsp;
-        <select title="languagedropdown">
-          <option value="us">ENG(US)</option>
-          <option value="in">ENG(IN)</option>
-        </select>
-      </div>
-      <!--language ends-->
-
-      <!--profile starts-->
-      <div id="profile">
-        <div id="notification">
-          <i class="bi bi-bell" id="bell"></i>
-        </div>&nbsp;
-        <img src="images/user1.jpg" alt="">&nbsp;
-        <div id="profile-name">
-          <span id="name">Musfig</span><br>
-          <span id="domain">Admin</span>
+    <!--Content Starts-->
+    <div id="content">
+      <!--Navbar Starts-->
+      <div id="navbar">
+        <!--name starts-->
+        <div id="item">
+          <h4>Dashboard</h4>
         </div>
-        <i class="bi bi-chevron-down" id="drop"></i>
-        <div id="down">
-          <span>View Profile</span>
-          <span>Edit Profile</span>
-          <span>Logout</span>
-        </div>
-      </div>
-     <!--profile ends-->
-    </div>
-    <!--navbar ends-->
+        <!--name ends-->
 
-    <!--Main 1 Starts-->
-    <div class="main active" id="main1">
-      <div class="r">
-        <div class="c" id="c1">
-          <div class="rows">
-            <div id="head-left">
-              <span class="heading">Today's Sales</span><br>
-              <span class="heading" style="font-size: 10px; color:gray;">Sales Summary</span>
-            </div>
-            <div id="button">
-              <button type="button" class="btn btn-outline-secondary btn-sm"><i class="bi bi-box-arrow-up"></i>&nbsp;Export</button>
-            </div>
-          </div>
-          <div class="rows" id="box-row">
-            <div class="b" style="background-color: rgb(250, 213, 219);">
-             
-              <i class="bi bi-bar-chart" title="Total Sales" style="background-color: palevioletred;"></i>
-              
-              <span class="num">$1k</span> <br>
-              <div class="box-base">
-                <span class="title">Total Sales</span><br>
-                <span class="subtitle">+8% from yesterday</span>
-              </div>
-            </div>
-            <div class="b" style="background-color: rgb(241, 240, 147) ;">
-              <i class="bi bi-journal" title="Total Order" style=" background-color: orange;"></i>
-              <span class="num">300</span> <br>
-              <div class="box-base">
-                <span class="title">Total Order</span><br>
-                <span class="subtitle">+5% from yesterday</span>
-              </div>
-            </div>
-            <div class="b" style="background-color: rgb(190, 248, 190) ">
-              <i class="bi bi-bookmark" title="Products Sold" style=" background-color: rgb(85, 180, 85) "></i>
-              <span class="num">5</span> <br>
-              <div class="box-base">
-                <span class="title">Products Sold</span><br>
-                <span class="subtitle">+1.5% from yesterday</span>
-              </div>
-            </div>
-            <div class="b" style="background-color: rgb(252, 208, 252)">
-              <i class="bi bi-person-plus" title="New Customer" style=" background-color:  rgb(216, 95, 216)"></i>
-              <span class="num">8</span> <br>
-              <div class="box-base">
-                <span class="title">New Customers</span><br>
-                <span class="subtitle">0.5% from yesterday</span>
-              </div>
-            </div>
-          </div>
-          <button class="hoverbtn" type="button">More details</button>
-          <dialog class="modals">
-            <h4>Today's Sales</h4>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam nobis temporibus doloribus praesentium placeat hic, nemo iusto voluptates maxime facere quidem, doloremque atque nihil asperiores quam libero dolore alias eos?</p>
-            <button class="clsbtn" type="button">close</button>
-          </dialog>
+        <!--searchbar starts-->
+        <div id="searchbar">
+          <label for="search"><i class="bi bi-search"></i></label>&nbsp;
+          <input type="text" name="search" placeholder="Search here..." />
         </div>
-        <div class="c" id="c2">
-          <div class="heading">
-          <span>Visitor Insights</span>
+        <!--searchbar ends-->
+
+        <!--language starts-->
+        <div id="language">
+          <img src="images/download.png" alt="" />&nbsp;
+          <select title="languagedropdown">
+            <option value="us">ENG(US)</option>
+            <option value="in">ENG(IN)</option>
+          </select>
+        </div>
+        <!--language ends-->
+
+        <!--profile starts-->
+        <div id="profile">
+          <div id="notification">
+            <i class="bi bi-bell" id="bell"></i>
           </div>
-         
-          <img class="image" src="images/graph3.png" alt="">
-          
-          <div class="base">
+          &nbsp; <img src="images/user1.jpg" alt="" />&nbsp;
+          <div id="profile-name">
+            <span id="name">Musfig</span><br />
+            <span id="domain">Admin</span>
+          </div>
+          <i class="bi bi-chevron-down" id="drop"></i>
+          <div id="down">
+            <span>Fill Details</span>
+
+            <span>Edit Profile</span>
+            <span>Logout</span>
+          </div>
+        </div>
+        <!--profile ends-->
+      </div>
+      <!--navbar ends-->
+
+      <!--Main 1 Starts-->
+      <div class="main active" id="main1">
+        <div class="r">
+          <div class="c" id="c1">
+            <div class="rows">
+              <div id="head-left">
+                <span class="heading">Today's Sales</span><br />
+                <span class="heading" style="font-size: 10px; color: gray"
+                  >Sales Summary</span
+                >
+              </div>
+              <div id="button">
+                <button type="button" class="btn btn-outline-secondary btn-sm">
+                  <i class="bi bi-box-arrow-up"></i>&nbsp;Export
+                </button>
+              </div>
+            </div>
+            <div class="rows" id="box-row">
+              <div class="b" style="background-color: rgb(250, 213, 219)">
+                <i
+                  class="bi bi-bar-chart"
+                  title="Total Sales"
+                  style="background-color: palevioletred"
+                ></i>
+
+                <span class="num">$1k</span> <br />
+                <div class="box-base">
+                  <span class="title">Total Sales</span><br />
+                  <span class="subtitle">+8% from yesterday</span>
+                </div>
+              </div>
+              <div class="b" style="background-color: rgb(241, 240, 147)">
+                <i
+                  class="bi bi-journal"
+                  title="Total Order"
+                  style="background-color: orange"
+                ></i>
+                <span class="num">300</span> <br />
+                <div class="box-base">
+                  <span class="title">Total Order</span><br />
+                  <span class="subtitle">+5% from yesterday</span>
+                </div>
+              </div>
+              <div class="b" style="background-color: rgb(190, 248, 190)">
+                <i
+                  class="bi bi-bookmark"
+                  title="Products Sold"
+                  style="background-color: rgb(85, 180, 85)"
+                ></i>
+                <span class="num">5</span> <br />
+                <div class="box-base">
+                  <span class="title">Products Sold</span><br />
+                  <span class="subtitle">+1.5% from yesterday</span>
+                </div>
+              </div>
+              <div class="b" style="background-color: rgb(252, 208, 252)">
+                <i
+                  class="bi bi-person-plus"
+                  title="New Customer"
+                  style="background-color: rgb(216, 95, 216)"
+                ></i>
+                <span class="num">8</span> <br />
+                <div class="box-base">
+                  <span class="title">New Customers</span><br />
+                  <span class="subtitle">0.5% from yesterday</span>
+                </div>
+              </div>
+            </div>
+            <button class="hoverbtn" type="button">More details</button>
+            <dialog class="modals">
+              <h4>Today's Sales</h4>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam
+                nobis temporibus doloribus praesentium placeat hic, nemo iusto
+                voluptates maxime facere quidem, doloremque atque nihil
+                asperiores quam libero dolore alias eos?
+              </p>
+              <button class="clsbtn" type="button">close</button>
+            </dialog>
+          </div>
+          <div class="c" id="c2">
+            <div class="heading">
+              <span>Visitor Insights</span>
+            </div>
+
+            <img class="image" src="images/graph3.png" alt="" />
+
+            <div class="base">
               <div class="ref">
-                <i class="bi bi-square-fill" style="color: green;"></i>
+                <i class="bi bi-square-fill" style="color: green"></i>
                 <span>Loyal Customer</span>
               </div>
               <div class="ref">
-                <i class="bi bi-square-fill" style="color: brown;"></i>
+                <i class="bi bi-square-fill" style="color: brown"></i>
                 <span>New Customer</span>
               </div>
             </div>
             <button class="hoverbtn" type="button">More details</button>
             <dialog class="modals">
               <h4>Visitor Insights</h4>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam nobis temporibus doloribus praesentium placeat hic, nemo iusto voluptates maxime facere quidem, doloremque atque nihil asperiores quam libero dolore alias eos?</p>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam
+                nobis temporibus doloribus praesentium placeat hic, nemo iusto
+                voluptates maxime facere quidem, doloremque atque nihil
+                asperiores quam libero dolore alias eos?
+              </p>
               <button class="clsbtn" type="button">close</button>
             </dialog>
-        </div>
-      </div>
-      <div class="r">
-        <div class="c" id="c3">
-          <div class="heading">
-            <span>Total Revenue</span>
           </div>
-         
-          <img class="image" src="images/barchart1.jpg" alt="">
-           
-              <div class="base">
-                <div class="ref">
-                  <i class="bi bi-circle-fill" style="color:#988DEB;"></i>
-                  <span>Online Sales</span>
-                </div>
-                <div class="ref">
-                  <i class="bi bi-circle-fill" style="color:rgb(241, 159, 241)"></i> 
-                  <span>Offline Sales</span>
-                </div>
-              </div>
-              <button class="hoverbtn" type="button">More details</button>
-              <dialog class="modals">
-                <h4>Total Revenue</h4>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam nobis temporibus doloribus praesentium placeat hic, nemo iusto voluptates maxime facere quidem, doloremque atque nihil asperiores quam libero dolore alias eos?</p>
-                <button class="clsbtn" type="button">close</button>
-              </dialog>
         </div>
-        <div class="c" id="c4">
-          <span class="heading">Customer Satisfaction</span>
-              <img class="imgsm"src="images/img2.jpg" alt="">
-              <hr>
-              <div class="base">
-                <div class="refer">
-                  <i class="bi bi-diamond-fill" style="color:rgb(104, 188, 240)"></i>&nbsp;
-                  <div>
-                    <span class="h1">Last Month</span><br>
-                    <span class="h2">$3,004</span>
-                  </div>
-                </div>
-                <div class="refer">
-                  <i class="bi bi-square-fill" style="color:#165c97"></i>&nbsp;
-                  <div>
-                    <span class="h1">This Month</span><br>
-                    <span class="h2">$4,504</span>
-                  </div>
-                </div>
-              </div>
-              <button class="hoverbtn" type="button">More details</button>
-              <dialog class="modals">
-                <h4>Customer Satisfaction</h4>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam nobis temporibus doloribus praesentium placeat hic, nemo iusto voluptates maxime facere quidem, doloremque atque nihil asperiores quam libero dolore alias eos?</p>
-                <button class="clsbtn" type="button">close</button>
-              </dialog>
-        </div>
-        <div class="c" id="c5">
-          <div class="heading">
-            <span>Target vs Reality</span>
-          </div>
-              <img class="imgsm" src="images/r2c3.jpg" alt="">
-              <div>
-                <div class="reference">
-                  <i class="bi bi-bag" style="background-color: #acd7fa;color:blue"></i>&nbsp;
-                  <div>
-                    <span class="head1">Reality Sales</span><br>
-                    <span class="head2">Global</span>
-                  </div>
-                  <span class="rate" style="color: blue;">8.823</span>
-                </div>
-                <div class="reference">
-                  <i class="bi bi-postcard" style="background-color:rgb(243, 217, 170) ;color:rgb(255, 94, 0);"></i>&nbsp;
-                  <div>
-                    <span class="head1">Target Sales</span><br>
-                    <span class="head2">Commercial</span>
-                  </div>
-                  <span class="rate" style="color:rgb(255, 94, 0);">12.122</span>
-                </div>
-              </div>
-              <button class="hoverbtn" type="button">More details</button>
-              <dialog class="modals">
-                <h4>Target vs Reality</h4>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam nobis temporibus doloribus praesentium placeat hic, nemo iusto voluptates maxime facere quidem, doloremque atque nihil asperiores quam libero dolore alias eos?</p>
-                <button class="clsbtn" type="button">close</button>
-              </dialog>
+        <div class="r">
+          <div class="c" id="c3">
+            <div class="heading">
+              <span>Total Revenue</span>
             </div>
-        
-      </div>
-      <div class="r">
-        <div class="c" id="c6">
-          <div class="heading">
-            <span>Top Products</span>
+
+            <img class="image" src="images/barchart1.jpg" alt="" />
+
+            <div class="base">
+              <div class="ref">
+                <i class="bi bi-circle-fill" style="color: #988deb"></i>
+                <span>Online Sales</span>
+              </div>
+              <div class="ref">
+                <i
+                  class="bi bi-circle-fill"
+                  style="color: rgb(241, 159, 241)"
+                ></i>
+                <span>Offline Sales</span>
+              </div>
+            </div>
+            <button class="hoverbtn" type="button">More details</button>
+            <dialog class="modals">
+              <h4>Total Revenue</h4>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam
+                nobis temporibus doloribus praesentium placeat hic, nemo iusto
+                voluptates maxime facere quidem, doloremque atque nihil
+                asperiores quam libero dolore alias eos?
+              </p>
+              <button class="clsbtn" type="button">close</button>
+            </dialog>
           </div>
-          <table id="dashboard-table">
-                <tr>
-                  <th class="col1">S.No</th>
-                  <th class="col2">Name</th>
-                  <th class="col3">Popularity</th>
-                  <th class="col4">Sales</th>
-                </tr>
-                <tr class="t-r">
-                  <td class="col1">01</td>
-                  <td class="col2">Home Decor Range</td>
-                  <td class="col3">
-                    <div class="progress" style="background-color: rgb(149, 241, 241);">
-                      <div class="progress-bar" style=" background-color: rgb(35, 141, 240);width:45%;"></div>
-                    </div>
-                  </td>
-                  <td class="col4">
-                    <span class="badge" style="color:rgb(35, 141, 240);background-color: rgb(149, 241, 241);border-color:rgb(35, 141, 240) ;">45%</span>
-                  </td>
-                </tr>
-                <tr class="t-r">
-                  <td class="col1">02</td>
-                  <td class="col2">Disney Princess Pink Bag 18</td>
-                  <td class="col3">
-                    <div class="progress" style="background-color:rgba(149, 241, 190, 0.973)">
-                      <div class="progress-bar" style="  background-color: rgb(42, 95, 21);width:29%;"></div>
-                    </div>
-                  </td>
-                  <td class="col4">
-                    <span class="badge" style="background-color: rgba(149, 241, 190, 0.973); color:  rgb(42, 95, 21); border-color:  rgb(42, 95, 21);">29%</span>
-                  </td>
-                </tr>
-                <tr class="t-r">
-                  <td class="col1">03</td>
-                  <td class="col2">Bathroom Essentials</td>
-                  <td class="col3">
-                    <div class="progress" style=" background-color: rgb(149, 166, 241);">
-                      <div class="progress-bar" style=" background-color: rgb(74, 79, 146);width:18%;"></div>
-                    </div>
-                  </td>
-                  <td class="col4">
-                    <span class="badge" style=" background-color:  rgb(149, 166, 241); color:rgb(74, 79, 146) ; border-color:rgb(74, 79, 146) ;">18%</span>
-                  </td>
-                </tr>
-                <tr class="t-r" style="border:none;">
-                  <td class="col1">04</td>
-                  <td class="col2">Apple Smartwatches</td>
-                  <td class="col3">
-                    <div class="progress" style="background-color: rgb(241, 232, 149);">
-                      <div class="progress-bar" style=" background-color: rgb(194, 141, 71);width:25%;"></div>
-                    </div>
-                  </td>
-                  <td class="col4">
-                    <span class="badge" style=" background-color: rgb(241, 232, 149) ; color:rgb(194, 141, 71) ; border-color:rgb(194, 141, 71) ;">25%</span>
-                  </td>
-                </tr>
-              </table>
-              <button class="hoverbtn" type="button">More details</button>
-              <dialog class="modals">
-                <h4>Top Products</h4>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam nobis temporibus doloribus praesentium placeat hic, nemo iusto voluptates maxime facere quidem, doloremque atque nihil asperiores quam libero dolore alias eos?</p>
-                <button class="clsbtn" type="button">close</button>
-              </dialog>
-        </div>
-        
-        <div class="c" id="c7">
-          <div class="heading">
-          <span>Sales Mapping by Country</span>
-          </div>
-        <img id="map" src="images/map.jpg" alt="">
-        <button class="hoverbtn" type="button">More details</button>
-        <dialog class="modals">
-          <h4>Sales Mapping by Country</h4>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam nobis temporibus doloribus praesentium placeat hic, nemo iusto voluptates maxime facere quidem, doloremque atque nihil asperiores quam libero dolore alias eos?</p>
-          <button class="clsbtn" type="button">close</button>
-        </dialog>
-        </div>
-        <div class="c" id="c8">
-          <div class="heading">
-          <span>Volume vs Service Level</span>
-          </div>
-              <img class="imgsm" src="images/r3c3.jpg" alt="">
-              <hr>
-              <div class="base">
-                <div class="refer">
-                  
-                  <i class="bi bi-circle-fill" style="color:rgb(49, 137, 192)"></i>&nbsp;
-                  <div>
-                  <span class="h1">Volume</span><br>
-                  <span class="h2">1135</span>
-                 </div>
-                 </div>
-                 <div class="refer">
-                  
-                  <i class="bi bi-circle-fill" style="color:rgb(209, 87, 87)"></i>&nbsp;
-                  <div>
-                    <span class="h1">Services</span><br>
-                    <span class="h2">635</span>
-                   </div>
+          <div class="c" id="c4">
+            <span class="heading">Customer Satisfaction</span>
+            <img class="imgsm" src="images/img2.jpg" alt="" />
+            <hr />
+            <div class="base">
+              <div class="refer">
+                <i
+                  class="bi bi-diamond-fill"
+                  style="color: rgb(104, 188, 240)"
+                ></i
+                >&nbsp;
+                <div>
+                  <span class="h1">Last Month</span><br />
+                  <span class="h2">$3,004</span>
                 </div>
+              </div>
+              <div class="refer">
+                <i class="bi bi-square-fill" style="color: #165c97"></i>&nbsp;
+                <div>
+                  <span class="h1">This Month</span><br />
+                  <span class="h2">$4,504</span>
+                </div>
+              </div>
+            </div>
+            <button class="hoverbtn" type="button">More details</button>
+            <dialog class="modals">
+              <h4>Customer Satisfaction</h4>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam
+                nobis temporibus doloribus praesentium placeat hic, nemo iusto
+                voluptates maxime facere quidem, doloremque atque nihil
+                asperiores quam libero dolore alias eos?
+              </p>
+              <button class="clsbtn" type="button">close</button>
+            </dialog>
+          </div>
+          <div class="c" id="c5">
+            <div class="heading">
+              <span>Target vs Reality</span>
+            </div>
+            <img class="imgsm" src="images/r2c3.jpg" alt="" />
+            <div>
+              <div class="reference">
+                <i
+                  class="bi bi-bag"
+                  style="background-color: #acd7fa; color: blue"
+                ></i
+                >&nbsp;
+                <div>
+                  <span class="head1">Reality Sales</span><br />
+                  <span class="head2">Global</span>
+                </div>
+                <span class="rate" style="color: blue">8.823</span>
+              </div>
+              <div class="reference">
+                <i
+                  class="bi bi-postcard"
+                  style="
+                    background-color: rgb(243, 217, 170);
+                    color: rgb(255, 94, 0);
+                  "
+                ></i
+                >&nbsp;
+                <div>
+                  <span class="head1">Target Sales</span><br />
+                  <span class="head2">Commercial</span>
+                </div>
+                <span class="rate" style="color: rgb(255, 94, 0)">12.122</span>
+              </div>
+            </div>
+            <button class="hoverbtn" type="button">More details</button>
+            <dialog class="modals">
+              <h4>Target vs Reality</h4>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam
+                nobis temporibus doloribus praesentium placeat hic, nemo iusto
+                voluptates maxime facere quidem, doloremque atque nihil
+                asperiores quam libero dolore alias eos?
+              </p>
+              <button class="clsbtn" type="button">close</button>
+            </dialog>
+          </div>
         </div>
-        <button class="hoverbtn" type="button">More details</button>
-        <dialog class="modals">
-          <h4>Volume vs Service Level</h4>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam nobis temporibus doloribus praesentium placeat hic, nemo iusto voluptates maxime facere quidem, doloremque atque nihil asperiores quam libero dolore alias eos?</p>
-          <button class="clsbtn" type="button">close</button>
-        </dialog>
-      </div> 
-      
-    </div>
-    </div>
-    <!--Main 1 Ends-->
+        <div class="r">
+          <div class="c" id="c6">
+            <div class="heading">
+              <span>Top Products</span>
+            </div>
+            <table id="dashboard-table">
+              <tr>
+                <th class="col1">S.No</th>
+                <th class="col2">Name</th>
+                <th class="col3">Popularity</th>
+                <th class="col4">Sales</th>
+              </tr>
+              <tr class="t-r">
+                <td class="col1">01</td>
+                <td class="col2">Home Decor Range</td>
+                <td class="col3">
+                  <div
+                    class="progress"
+                    style="background-color: rgb(149, 241, 241)"
+                  >
+                    <div
+                      class="progress-bar"
+                      style="background-color: rgb(35, 141, 240); width: 45%"
+                    ></div>
+                  </div>
+                </td>
+                <td class="col4">
+                  <span
+                    class="badge"
+                    style="
+                      color: rgb(35, 141, 240);
+                      background-color: rgb(149, 241, 241);
+                      border-color: rgb(35, 141, 240);
+                    "
+                    >45%</span
+                  >
+                </td>
+              </tr>
+              <tr class="t-r">
+                <td class="col1">02</td>
+                <td class="col2">Disney Princess Pink Bag 18</td>
+                <td class="col3">
+                  <div
+                    class="progress"
+                    style="background-color: rgba(149, 241, 190, 0.973)"
+                  >
+                    <div
+                      class="progress-bar"
+                      style="background-color: rgb(42, 95, 21); width: 29%"
+                    ></div>
+                  </div>
+                </td>
+                <td class="col4">
+                  <span
+                    class="badge"
+                    style="
+                      background-color: rgba(149, 241, 190, 0.973);
+                      color: rgb(42, 95, 21);
+                      border-color: rgb(42, 95, 21);
+                    "
+                    >29%</span
+                  >
+                </td>
+              </tr>
+              <tr class="t-r">
+                <td class="col1">03</td>
+                <td class="col2">Bathroom Essentials</td>
+                <td class="col3">
+                  <div
+                    class="progress"
+                    style="background-color: rgb(149, 166, 241)"
+                  >
+                    <div
+                      class="progress-bar"
+                      style="background-color: rgb(74, 79, 146); width: 18%"
+                    ></div>
+                  </div>
+                </td>
+                <td class="col4">
+                  <span
+                    class="badge"
+                    style="
+                      background-color: rgb(149, 166, 241);
+                      color: rgb(74, 79, 146);
+                      border-color: rgb(74, 79, 146);
+                    "
+                    >18%</span
+                  >
+                </td>
+              </tr>
+              <tr class="t-r" style="border: none">
+                <td class="col1">04</td>
+                <td class="col2">Apple Smartwatches</td>
+                <td class="col3">
+                  <div
+                    class="progress"
+                    style="background-color: rgb(241, 232, 149)"
+                  >
+                    <div
+                      class="progress-bar"
+                      style="background-color: rgb(194, 141, 71); width: 25%"
+                    ></div>
+                  </div>
+                </td>
+                <td class="col4">
+                  <span
+                    class="badge"
+                    style="
+                      background-color: rgb(241, 232, 149);
+                      color: rgb(194, 141, 71);
+                      border-color: rgb(194, 141, 71);
+                    "
+                    >25%</span
+                  >
+                </td>
+              </tr>
+            </table>
+            <button class="hoverbtn" type="button">More details</button>
+            <dialog class="modals">
+              <h4>Top Products</h4>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam
+                nobis temporibus doloribus praesentium placeat hic, nemo iusto
+                voluptates maxime facere quidem, doloremque atque nihil
+                asperiores quam libero dolore alias eos?
+              </p>
+              <button class="clsbtn" type="button">close</button>
+            </dialog>
+          </div>
 
-    <!--Main 2 starts-->
-    <div class="main" id="main2">
-      
-      <h2><i class="bi bi-trophy-fill first" ></i> &nbsp;<i class="bi bi-trophy-fill second"></i>&nbsp; <i class="bi bi-trophy-fill third"></i> <br>Leaderboard</h2>
-      
-      <div id="leaderboard">
-        <table id="leadertable">
-          <tr>
-            <th>Rank</th>
-            <th>Name</th>
-            <th>Points</th>
-            <th>Reward</th>
-          </tr>
-          <tr>
-            <td style="color:gold;font-weight: bolder;">1</td>
-            <td>aaaaa</td>
-            <td>500</td>
-            <td><i class="bi bi-trophy-fill first"></i></td>
-          </tr>
-          <tr>
-            <td style="color:silver;font-weight: bolder;">2</td>
-            <td>bbbbb</td>
-            <td>400</td>
-            <td><i class="bi bi-trophy-fill second"></i></td>
-          </tr>
-          <tr>
-            <td style="color:rgb(194, 136, 28);font-weight: bolder;">3</td>
-            <td>ccccc</td>
-            <td>300</td>
-            <td><i class="bi bi-trophy-fill third"></i></td>
-          </tr>
-        </table>
+          <div class="c" id="c7">
+            <div class="heading">
+              <span>Sales Mapping by Country</span>
+            </div>
+            <img id="map" src="images/map.jpg" alt="" />
+            <button class="hoverbtn" type="button">More details</button>
+            <dialog class="modals">
+              <h4>Sales Mapping by Country</h4>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam
+                nobis temporibus doloribus praesentium placeat hic, nemo iusto
+                voluptates maxime facere quidem, doloremque atque nihil
+                asperiores quam libero dolore alias eos?
+              </p>
+              <button class="clsbtn" type="button">close</button>
+            </dialog>
+          </div>
+          <div class="c" id="c8">
+            <div class="heading">
+              <span>Volume vs Service Level</span>
+            </div>
+            <img class="imgsm" src="images/r3c3.jpg" alt="" />
+            <hr />
+            <div class="base">
+              <div class="refer">
+                <i
+                  class="bi bi-circle-fill"
+                  style="color: rgb(49, 137, 192)"
+                ></i
+                >&nbsp;
+                <div>
+                  <span class="h1">Volume</span><br />
+                  <span class="h2">1135</span>
+                </div>
+              </div>
+              <div class="refer">
+                <i class="bi bi-circle-fill" style="color: rgb(209, 87, 87)"></i
+                >&nbsp;
+                <div>
+                  <span class="h1">Services</span><br />
+                  <span class="h2">635</span>
+                </div>
+              </div>
+            </div>
+            <button class="hoverbtn" type="button">More details</button>
+            <dialog class="modals">
+              <h4>Volume vs Service Level</h4>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam
+                nobis temporibus doloribus praesentium placeat hic, nemo iusto
+                voluptates maxime facere quidem, doloremque atque nihil
+                asperiores quam libero dolore alias eos?
+              </p>
+              <button class="clsbtn" type="button">close</button>
+            </dialog>
+          </div>
+        </div>
       </div>
-    </div>
-    <!--Main 2 Ends-->
+      <!--Main 1 Ends-->
 
-    <!--Main 3 Starts-->
-    <div class="main" id="main3">
-      <h4>Order</h4>
-    </div>
-    <!--Main 3 Ends-->
+      <!--Main 2 starts-->
+      <div class="main" id="main2">
+        <h2>Leaderboard</h2>
+        <!-- <h2>
+          <i class="bi bi-trophy-fill first"></i> &nbsp;<i
+            class="bi bi-trophy-fill second"
+          ></i
+          >&nbsp; <i class="bi bi-trophy-fill third"></i> <br />Leaderboard
+        </h2>
 
-    <!--Main 4 Starts-->
-    <div class="main" id="main4">
-      <h2>Products</h2>
-      <!-- <table id="product-table">
+        <div id="leaderboard">
+          <table id="leadertable">
+            <tr>
+              <th>Rank</th>
+              <th>Name</th>
+              <th>Points</th>
+              <th>Reward</th>
+            </tr>
+            <tr>
+              <td style="color: gold; font-weight: bolder">1</td>
+              <td>aaaaa</td>
+              <td>500</td>
+              <td><i class="bi bi-trophy-fill first"></i></td>
+            </tr>
+            <tr>
+              <td style="color: silver; font-weight: bolder">2</td>
+              <td>bbbbb</td>
+              <td>400</td>
+              <td><i class="bi bi-trophy-fill second"></i></td>
+            </tr>
+            <tr>
+              <td style="color: rgb(194, 136, 28); font-weight: bolder">3</td>
+              <td>ccccc</td>
+              <td>300</td>
+              <td><i class="bi bi-trophy-fill third"></i></td>
+            </tr>
+          </table>
+        </div> -->
+      </div>
+      <!--Main 2 Ends-->
+
+      <!--Main 3 Starts-->
+      <div class="main" id="main3">
+        <h4>Order</h4>
+      </div>
+      <!--Main 3 Ends-->
+
+      <!--Main 4 Starts-->
+      <div class="main" id="main4">
+        <h2>Products</h2>
+        <!-- <table id="product-table">
         <tr>
           <th class="col1">S.No</th>
           <th class="col2">Name</th>
@@ -605,35 +758,39 @@
           </td>
         </tr>
       </table> -->
-    </div>
-    <!--Main 4 Ends-->
+      </div>
+      <!--Main 4 Ends-->
 
-    <!--Main 5 Starts-->
-    <div class="main">
-      <h4>Sales Report</h4>
-    </div>
-    <!--Main 5 Ends-->
+      <!--Main 5 Starts-->
+      <div class="main">
+        <h4>Sales Report</h4>
+      </div>
+      <!--Main 5 Ends-->
 
-    <!--Main 6 Starts-->
-    <div class="main">
-      <h4>Message</h4>
-    </div>
-    <!--Main 6 Ends-->
+      <!--Main 6 Starts-->
+      <div class="main">
+        <h4>Message</h4>
+      </div>
+      <!--Main 6 Ends-->
 
-    <!--Main 7 Starts-->
-    <div class="main">
-      <h4>Settings</h4>
-    </div>
-    <!--Main 7 Ends-->
+      <!--Main 7 Starts-->
+      <div class="main">
+        <h4>Settings</h4>
+      </div>
+      <!--Main 7 Ends-->
 
-    <!--Main 8 Starts-->
-    <div class="main">
-      <h4>Signout</h4>
+      <!--Main 8 Starts-->
+      <div class="main">
+        <h4>Signout</h4>
+      </div>
+      <!--Main 8 Ends-->
     </div>
-    <!--Main 8 Ends-->
-  </div>
-  <!--Content Ends-->
-  <script src="index.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-</body>
+    <!--Content Ends-->
+    <script src="index.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

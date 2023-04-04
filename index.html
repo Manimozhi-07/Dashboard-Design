@@ -20,6 +20,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
   </head>
   <body>
     <!--Sidebar Starts-->
@@ -109,8 +110,8 @@
 
         <!--language starts-->
         <div id="language">
-          <img src="images/download.png" alt="" />&nbsp;
-          <select title="languagedropdown">
+          <!-- <img src="images/download.png" alt="" />&nbsp; -->
+          <select title="languagedropdown" >
             <option value="us">ENG(US)</option>
             <option value="in">ENG(IN)</option>
           </select>
@@ -129,10 +130,74 @@
           </div>
           <i class="bi bi-chevron-down" id="drop"></i>
           <div id="down">
-            <span>Fill Details</span>
+            <span class="dropdown">Fill Details</span>
 
-            <span>Edit Profile</span>
-            <span>Logout</span>
+            <dialog class="form-popup">
+              <form action="" id="reg-form" tabindex="0">
+                <div class="form-head">
+                  <span>Form validation</span>
+                  <span id="close-icon">&times;</span>
+                </div>
+
+                <div class="input-field">
+                  <label for="name">Username:</label><br />
+                  <input
+                    type="text"
+                    id="uname"
+                    name="username"
+                    placeholder="Name"
+                  />&nbsp;
+                  <i class="bi bi-check-circle-fill correct"></i>
+                  <i class="bi bi-exclamation-circle-fill wrong"></i>
+                  <p>error message</p>
+                </div>
+                <div class="input-field">
+                  <label for="email">Email:</label><br />
+                  <input
+                    type="text"
+                    id="email"
+                    name="email "
+                    placeholder="Email"
+                    required
+                  />&nbsp;
+                  <i class="bi bi-check-circle-fill correct"></i>
+                  <i class="bi bi-exclamation-circle-fill wrong"></i>
+                  <p>error message</p>
+                </div>
+                <div class="input-field">
+                  <label for="password">Password:</label><br />
+                  <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="Password"
+                    required
+                  />&nbsp;
+                  <i class="bi bi-check-circle-fill correct"></i>
+                  <i class="bi bi-exclamation-circle-fill wrong"></i>
+                  <p>error message</p>
+                </div>
+                <div class="input-field">
+                  <label for="cpassword">Confirm Password:</label><br />
+                  <input
+                    type="password"
+                    id="cpassword"
+                    name="cpassword"
+                    placeholder="Confirm Password"
+                    required
+                  />&nbsp;
+                  <i class="bi bi-check-circle-fill correct"></i>
+
+                  <i class="bi bi-exclamation-circle-fill wrong"></i>
+                  <p>error message</p>
+                </div>
+                <button type="submit" id="submit-button" disabled>
+                  Submit
+                </button>
+              </form>
+            </dialog>
+            <span class="dropdown">Edit Profile</span>
+            <span class="dropdown">Logout</span>
           </div>
         </div>
         <!--profile ends-->

@@ -76,12 +76,14 @@ const down = document.getElementById("down");
 
 drop.addEventListener("click", myDrop);
 function myDrop() {
-  if (down.style.display === "block") {
+  if (down.style.display == "block") {
     down.style.display = "none";
     drop.style.transform = "rotate(360deg)";
+    resStatus="closed";
   } else {
     down.style.display = "block";
     drop.style.transform = "rotate(180deg)";
+  
   }
 }
 document.addEventListener("click", function (event) {
@@ -95,9 +97,10 @@ document.addEventListener("click", function (event) {
 const details = document.querySelector("#down .dropdown");
 const formPop = document.querySelector(".form-popup");
 const closeIcon = document.querySelector("#close-icon");
+
 details.addEventListener("click", () => {
   formPop.showModal();
- 
+  
 });
 closeIcon.addEventListener("click", () => {
   formPop.close();
@@ -114,6 +117,7 @@ const reg = /\S+@\S+\.\S+/;
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
+  
 });
 
 uname.addEventListener("input", () => {
@@ -190,15 +194,16 @@ function validatePassword() {
 function validateConfirmPassword() {
   if (cpassword.value.trim().length === 0) {
     error(cpassword, "Password field should not be empty");
-  } else if (
-    cpassword.value.trim().length < 5 ||
-    cpassword.value.trim().length > 20
-  ) {
-    error(
-      cpassword,
-      "Password must be minimum of 5 charcters or maximum of 20"
-    );
-  } else if (password.value !== cpassword.value) {
+  }
+  //  else if (
+  //   cpassword.value.trim().length < 5 ||
+  //   cpassword.value.trim().length > 20
+  // ) {
+  //   error(
+  //     cpassword,
+  //     "Password must be minimum of 5 charcters or maximum of 20"
+  //   );
+  else if (password.value !== cpassword.value) {
     error(cpassword, "Password does not matches");
   } else {
     success(cpassword);
@@ -236,3 +241,5 @@ function enableButton() {
     btn1.disabled = true;
   }
 }
+
+

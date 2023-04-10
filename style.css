@@ -175,7 +175,8 @@ body {
   position: absolute;
   top: 70px;
   border-radius: 10px;
-  background-color: grey;
+  /* background-color: grey; */
+  background-color: #5d60ef;
   padding: 15px;
 
   display: none;
@@ -183,12 +184,13 @@ body {
 #down .dropdown {
   display: block;
   line-height: 50px;
-  font-weight: bolder;
+  /* font-weight: bolder; */
   padding: 5px;
+  color: white;
 }
 #down .dropdown:hover {
-  background-color: #f2f2f2;
-  border-radius: 10px;
+  /* background-color: #f2f2f2; */
+  /* border-radius: 10px; */
   cursor: pointer;
 }
 #down::before {
@@ -196,7 +198,8 @@ body {
   position: absolute;
   width: 10px;
   height: 10px;
-  background-color: gray;
+  /* background-color: gray; */
+  background-color: #5d60ef;
   transform: rotate(45deg);
   left: 80%;
   top: -5px;
@@ -210,7 +213,8 @@ body {
   opacity: 0.9;
 }
 form {
-  background-color: khaki;
+  background-color: #f0eb8d;
+
   padding: 10px;
   margin: 10px;
   width: 500px;
@@ -239,6 +243,7 @@ form .form-head {
 }
 .input-field i {
   position: absolute;
+  top: 37px;
   visibility: hidden;
 }
 .input-field p {
